@@ -1,0 +1,25 @@
+/*
+  0 - turn the rule off
+  1 - turn the rule on as a warning
+  2 - turn the rule on as an error
+*/
+
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-namespace": 1,
+    "no-console": 1,
+    "prettier/prettier": 2
+  }
+}

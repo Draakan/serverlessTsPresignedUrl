@@ -1,0 +1,55 @@
+{
+  "name": "aws-serverless-ts-signed-url",
+  "version": "1.0.0",
+  "description": "Serverless lambda function to generate signed url for scalable file uploading",
+  "main": "serverless.ts",
+  "keywords": [
+    "serverless",
+    "lambda",
+    "typescript",
+    "aws",
+    "signed url",
+    "scalabe file uploading"
+  ],
+  "scripts": {
+    "start": "serverless offline start",
+    "deploy": "serverless deploy",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' './serverless.ts' --write",
+    "lint": "eslint . --ext .ts"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "dependencies": {
+    "@middy/core": "^3.4.0",
+    "@middy/http-json-body-parser": "^3.4.0",
+    "aws-sdk": "^2.1343.0",
+    "http-status-codes": "^2.2.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^3.27.0",
+    "@types/aws-lambda": "^8.10.71",
+    "@types/node": "^14.14.25",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "esbuild": "^0.14.11",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7",
+    "serverless": "^3.0.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-esbuild": "^1.23.3",
+    "serverless-offline": "^12.0.4",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier-format && npm run lint"
+    }
+  },
+  "author": "Draakan",
+  "license": "MIT"
+}
