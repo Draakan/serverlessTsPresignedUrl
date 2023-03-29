@@ -46,11 +46,6 @@
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.1.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
-    }
-  },
   "author": "Draakan",
   "license": "MIT"
 }
