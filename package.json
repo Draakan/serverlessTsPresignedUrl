@@ -15,7 +15,8 @@
     "start": "serverless offline start",
     "deploy": "serverless deploy",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' './serverless.ts' --write",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">=14.15.0"
